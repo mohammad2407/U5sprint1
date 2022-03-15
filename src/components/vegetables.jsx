@@ -1,4 +1,5 @@
 import React from "react";
+import "../components/style.css"
 
 
 function Vegetables () {
@@ -28,10 +29,13 @@ function Vegetables () {
 
 return (
     <>
-    
-    <h4>Tomato:{tomato} Kg</h4>
+    {/* <div style={Styles.vegetables}> */}
+        <h4>Tomato:{tomato} Kg</h4>
         <button onClick={()=>changeTomato(1)}>Add</button>
         <button onClick={()=>changeTomato(-1)}>remove</button>
+
+    {/* </div> */}
+    
 
         <h4>Potatoes:{potato} Kg</h4>
         <button onClick={()=>changePotatoes(1)}>Add</button>

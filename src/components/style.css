@@ -1,0 +1,16 @@
+.vegetables{
+    display: flex;
+}
+.btn {
+    padding: 5px ;
+    background-color: green;
+   
+}
+
+.listed {
+    background-color: red;
+    color: white;
+    background: transparent;
+    border: 0;
+
+}

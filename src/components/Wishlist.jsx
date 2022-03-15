@@ -1,6 +1,7 @@
 import React from "react";
+import { List } from "./List";
 
-
+import "./style.css"
 function WishList() {
 
     const[query,setQuery] = React.useState("");
@@ -20,19 +21,19 @@ function WishList() {
     }
 
     
+    
 
 
     return (
         <>
             <h1>WishList</h1>
             <input value={query} onChange={display} placeholder = "Add Your WishList" ></input>
-            <button onClick={addToList}>Add</button>
-        
+            <div> { list.length < 3 ? <button  onClick={addToList}>Add</button>: "You can not add more"} </div>
 
         <div>
             {
                 list.map((item) => {
-                    return  <div>{item.title}</div>
+                    return  < List  title={item.title}/>
                 })
             }
         </div>
